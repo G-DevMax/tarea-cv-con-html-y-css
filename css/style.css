@@ -1,0 +1,151 @@
+/* Em esta parte se le aplica estilos genericos a diferentes elementos html */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.6em;
+    font-family: "Montserrat";
+}
+
+a{
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+ul{
+    font-family: "Montserrat";
+}
+
+h1{
+    font-size: 2em;
+}
+
+h1, h2, h3{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Condensed";
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    border: 1px solid #333;
+    height: auto;
+    padding: 30px 30px;
+}
+
+/* En esta parte se le aplica estilos especificos a los IDs y Clases especificados*/
+#aside-pag{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #e9e3db;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#cont-pag{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 20px 20px rgba(0, 0, 0, .15);
+    margin: 10px 0 20px;
+    font-size: calc(1em* 0.975);
+    justify-content: space-around;
+    width: 100%;
+}
+
+#barra-de-navegacion{
+    position: sticky;
+    top: 0;
+}
+
+#cont-nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 5px 15px;
+    margin: 0;
+    background-color: #333;
+}
+
+.linkNav{
+    margin: 10px;
+    color: #E8F9FD;
+}
+
+.caja-presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen-p{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.p-img{
+    width: 50%;
+}
+
+#section-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#perfilGit{
+    color: black;
+    text-decoration: none;
+}
+
+/* Se modifica el footer de la página "experiencias laborales", para que quede mejor */
+#footerExperienciasL{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* pequeña modificacion al párrafo de la formación académica, para que quede mejor*/
+#p-colegio{
+    text-align: center
+}
+
+/* En esta parte se hace algunas modificiones para que la página se adapte mejor a los dispositivos moviles */
+@media (max-width: 458px) {
+    .p-img{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 1.5em;
+        inline-size: max-content;
+    }
+
+    #cont-nav{
+        font-size: 14px;
+    }
+}
+
